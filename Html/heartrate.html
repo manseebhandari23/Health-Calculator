@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <img src="../assest/health-calculator-logo.png" width="80px" height="80px">&nbsp;&nbsp;
+    <a class="navbar-brand" href="#">Health Center</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto ">
+        <li class="nav-item active">
+          <a class="nav-link" href="../index.html" style="font-size: 22px;">Home<span class="sr-only">(current)</span></a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Html/yoga.html" style="font-size: 22px;">Yoga</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Html/aboutus.html" style="font-size: 22px;">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Html/contactus.html" style="font-size: 22px;">Contact us</a>
+          </li>            
+      </ul>
+    </div>
+  </nav>
+
+ 
+      <section>
+        <div class="container">
+          <br><br>
+          <div class="rounded mx-auto d-block text-center">
+          <img class="text-center " src="../assest/logo1.jpg" width="250px" height="250px">
+        </div>
+          <br>
+    
+            <div class="container px-5 py-24 mx-auto">
+              <div class="flex flex-col text-center w-full mb-12">
+             <h1 class="text-center  ">Test Your Heart Rate Here</h1>
+              </div>
+            <br>
+    
+          <div class="container mx-auto">
+    
+                <h4 class="text-center">Gender</h4>
+                <div class="container text-center">
+                  <div class=" d-inline-block">
+                    <input type="radio" name="gender" id="gender" value="male" > Male
+                  </div>
+                  &nbsp;&nbsp;
+                  <div class=" d-inline-block">
+                    <input type="radio" name="gender" id="gender"  value="female"> Female 
+                  </div>
+                </div> 
+    
+              </div>
+   
+              <br>
+              <div class="container input-group mb-3">
+                <div class="col-lg-4 col-md-4"></div>
+                
+                <div class="col-lg-4 col-md-4">
+                  <input id="Age" type="number" class="form-control" placeholder="Enter Your Age"
+                   style="margin: 10px 0;">
+                </div>
+
+                <div class="col-lg-4 col-md-4"></div>
+              </div>
+                  
+              <br>
+              <div class="container text-center">
+                  <button onclick="rate()" href="#"
+                   class="btn btn-success active text-center ">Calculate Heart Rate</button>
+              </div>
+    
+            </div>
+            <br>
+            <br>
+            <div class="container" >
+    
+            
+              <h3 id="heart" class="display-6 text-center" style="text-shadow: 2px 2px; font-size: 45px;">Your Result Is</h3>
+              <br><br>
+    
+            </div>  
+        </div>
+ 
+      </section>
+      <br><br>
+
+
+      <div style="height:100%; width: 100%; background-color: black;">            
+        <footer class="page-footer font-small indigo">
+    
+        <div class="container text-center text-md-left">
+    
+          <div class="row container">
+    
+            <div class="col-md-3 mx-auto">
+    
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-white pt-5">Health Tips</h5>
+              <ul class="list-unstyled ">
+                <li>
+                  <a href="#!">Women</a>
+                </li>
+                <li>
+                  <a href="#!">Men</a>
+                </li>
+                <li>
+                  <a href="#!">Children</a>
+                </li>
+                <li>
+                  <a href="#!">Blogs</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3 mx-auto">
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-white pt-5">Health Centers</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Gyms</a>
+                </li>
+                <li>
+                  <a href="#!">Health Spa</a>
+                </li>
+                <li>
+                  <a href="#!">Yoga Center</a>
+                </li>
+              </ul>
+            </div>
+        
+            <div class="col-md-3 mx-auto">
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4  text-white pt-5">Contact Details</h5>
+            <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Contact-(020)247821</a>
+                </li>
+                <li>
+                  <a href="#!">Email-healthcenter@gmail.com</a>
+                </li><br>
+                <li>
+                  <img src="../assest/twiiter.png" width="30px" height="30px">&nbsp;
+                  <img src="../assest/facebook.png" width="30px" height="30px">&nbsp;
+                  <img src="../assest/insta.jpg" width="30px" height="30px">&nbsp;
+                </li>
+            </div>
+          </div>
+        </div>
+      
+        <div class="footer-copyright text-center py-3 text-secondary">© 2020 Copyright:
+          <a href="">HealthCenter.com</a>
+        </div>
+        
+      </footer>
+    </div>
+    </div>
+        
+           
+  
+    
+      <script>
+    
+          function rate() 
+    {
+        var result;
+        var age = document.getElementById("Age").value;
+        var gender = document.getElementById("gender").value;
+    
+        if (age === "" && weight === "" && height === "") 
+        {
+            alert("Please enter the weight, height and age!");
+        } 
+        if (gender == "male") 
+        {
+            result = 220-age;
+            document.getElementById("heart").innerHTML = "Your Heart Rate is "+result;
+        } 
+        else (gander == "female")
+        {
+            result = 207-(0.7)*(age);
+            document.getElementById("heart").innerHTML = "Your Heart Rate is "+result;
+        }
+    
+        
+    }
+      </script>
+    
+      </body>
+    </html>
